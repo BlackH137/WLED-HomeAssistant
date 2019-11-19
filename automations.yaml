@@ -29,7 +29,7 @@
   action:
   - data_template:
       topic: wled/all/api
-      payload: A={{ states('input_number.ledintensity') | int }}
+      payload: A={{ states('input_number.ledbrightness') | int }}
     service: mqtt.publish
 - id: wled_palette
   alias: WLED Palette
